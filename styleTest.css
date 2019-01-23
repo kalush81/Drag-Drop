@@ -1,0 +1,82 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 700px;
+    /* border: 2px solid saddlebrown; */
+    display: flex;
+    flex-direction: row;
+}
+.container-left, .container-right {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid sandybrown; */
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    align-items: center;     
+}
+.container-middle-line {
+    width: 2px;
+}
+.box-1, .box-2, .box-3 {
+    width: 50%;
+    height: 20%;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 41px -5px rgba(20,19,19,0.5);    
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.box-1:hover, .box-2:hover, .box-3:hover {
+    opacity: 0.3;
+}
+.img-box-1, .img-box-2, .img-box-3 {
+    width: 100%;
+    height: 100%;    
+    background-size: cover;
+}
+
+.img-box-1 {background-image: url('./img/test-7.jpg');}
+.img-box-2 {background-image: url('./img/test-8.jpg');}
+.img-box-3 {background-image: url('./img/test-9.jpg');}
+h1 {
+    border-bottom: 1px solid black;
+}
+#h1Trans {
+    animation-name: opacityTrans;
+    animation-duration: 3s;
+    
+}
+@keyframes opacityTrans {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+p {
+    padding: 40px;
+    animation-name: paraTrans;
+    animation-duration: 3s;
+}
+@keyframes paraTrans {
+    from {
+        font-size: 8px;
+    }
+    to {
+        font-size: 20px;
+    }
+}
+#fixedPar {
+    position: fixed;
+    top: 10px;
+    right: 10px; 
+    padding: 15px;
+}
